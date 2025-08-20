@@ -1,0 +1,245 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gokul — Portfolio</title>
+  <meta name="description" content="Portfolio of Gokul — Junior Developer | Java, Python, HTML, CSS" />
+  <style>
+    :root{
+      --bg:#fbfbfd; --card:#ffffff; --muted:#6b7280; --accent:#0ea5a4; --glass: rgba(255,255,255,0.6);
+      --radius:14px; --maxw:1100px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#ffffff 0%, #f7fbfb 100%);color:#0f172a}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px}header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 6px 20px rgba(14,165,164,0.15)}
+nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+nav a{font-weight:600;color:#0f172a}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:30px;align-items:center;margin-top:28px}
+.card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:0 6px 30px rgba(2,6,23,0.06)}
+
+.intro h1{font-size:28px;margin:0 0 8px}
+.intro p{margin:0;color:var(--muted)}
+.cta{margin-top:18px;display:flex;gap:12px}
+.btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white}
+.btn-outline{background:transparent;border:1px solid #e6eef0;color:var(--muted)}
+
+.profile{display:flex;flex-direction:column;align-items:center;gap:12px}
+.portrait{width:210px;height:210px;border-radius:18px;background:linear-gradient(180deg,#fff,#f3f9f9);display:flex;align-items:center;justify-content:center;font-weight:700;color:#083344}
+.small{font-size:13px;color:var(--muted)}
+
+/* sections */
+section{margin-top:26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--glass);padding:8px 12px;border-radius:999px;font-weight:600}
+
+.projects .proj{padding:18px;border-radius:12px;border:1px solid #eef6f6;background:linear-gradient(180deg,#fff,#fcfeff)}
+.proj h3{margin:0 0 6px}
+.proj p{margin:0;color:var(--muted);font-size:14px}
+.proj .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:12px;padding:6px 8px;border-radius:6px;background:#f1f7f7}
+
+footer{margin-top:36px;text-align:center;color:var(--muted);font-size:14px}
+
+/* contact form */
+form{display:grid;gap:10px}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;background:transparent}
+textarea{min-height:120px;resize:vertical}
+
+/* responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:620px){.grid{grid-template-columns:1fr}.intro h1{font-size:22px}.portrait{width:160px;height:160px}}
+
+/* small utility */
+.row{display:flex;gap:12px;align-items:center}
+.center{display:flex;align-items:center;justify-content:center}
+
+  </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">G</div>
+        <div>
+          <div style="font-weight:800">Gokul</div>
+          <div style="font-size:12px;color:var(--muted)">Junior Developer — Java · Python · Web</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header><main>
+  <section class="hero">
+    <div class="intro card">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div>
+          <h1>Hi — I'm Gokul</h1>
+          <p class="small">A recent CS graduate (2025) from Maha Barathi Engineering College. I build clean web experiences and tools using Java, Python, HTML & CSS.</p>
+        </div>
+        <div class="small">Location: India</div>
+      </div>
+
+      <div style="margin-top:18px">
+        <p>I'm looking for a full-time role as a junior developer. Below are a few projects and skills that show what I can bring to a team.</p>
+        <div class="cta">
+          <button class="btn btn-primary" id="downloadResume">Download Resume</button>
+          <a class="btn btn-outline" href="mailto:gokulraj26082005@gmail.com">Email Me</a>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;display:flex;gap:12px;align-items:center">
+        <div class="row">
+          <div style="font-weight:700">Availability</div>
+          <div class="small">Immediate</div>
+        </div>
+        <div class="row">
+          <div style="font-weight:700">Looking for</div>
+          <div class="small">Full-time</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card profile">
+      <div class="portrait"><center><img src="1.jpg" width="210px" height="220px"></center></div>
+      <div style="text-align:center">
+        <div style="font-weight:800">Gokul.S</div>
+        <div class="small">Junior Developer</div>
+      </div>
+      <div style="width:100%;margin-top:8px">
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--muted)">
+          <div>
+            <div style="font-weight:700">Education</div>
+            <div class="small">B.E — CS (2025)</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-weight:700">Contact</div>
+            <div class="small">gokulraj26082005@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="about" class="card">
+    <h2 style="margin-top:0">About me</h2>
+    <p class="small">I enjoy turning ideas into clean, maintainable code. I have hands-on experience with web fundamentals and a working knowledge of Java and Python for backend tasks. I care about readable code, component-based design, and learning new tools every month.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid projects">
+      <article class="proj card">
+        <h3>Portfolio Website (This one)</h3>
+        <p>A single-file responsive portfolio with interactive JS and accessible markup.</p>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla JS</span>
+        </div>
+      </article>
+
+      <article class="proj card">
+        <h3>Task Manager (CLI & Web)</h3>
+        <p>A todo/task manager built with Java backend and lightweight frontend to track tasks.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">SQLite</span></div>
+      </article>
+
+      <article class="proj card">
+        <h3>Data Visualizer</h3>
+        <p>A small Python app that converts CSV data to interactive charts for quick analysis.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="card">
+    <h2 style="margin-top:0">Skills</h2>
+    <div class="skills">
+      <span class="chip">Java</span>
+      <span class="chip">Python</span>
+      <span class="chip">HTML & CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Git</span>
+      <span class="chip">SQL</span>
+    </div>
+  </section>
+
+  <section id="contact" class="card">
+    <h2 style="margin-top:0">Contact</h2>
+    <p class="small">Want to hire or collaborate? Send a message — I'll reply within a few days.</p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your name" required />
+      <input type="email" id="email" placeholder="you@example.com" required />
+      <textarea id="message" placeholder="Tell me about the project..." required></textarea>
+      <div style="display:flex;gap:10px">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="button" id="clear" class="btn btn-outline">Clear</button>
+      </div>
+      <div id="formStatus" class="small" style="margin-top:8px;color:var(--muted)"></div>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div>Made with ❤️ · <a href="#">GitHub</a> · <a href="#contact">Contact</a></div>
+</footer>
+
+  </div>  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href=a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    });
+
+    // Download resume (placeholder PDF data URL)
+    document.getElementById('downloadResume').addEventListener('click',()=>{
+      // In production, replace with a real resume URL. We'll generate a tiny placeholder file.
+      const blob = new Blob([`Gokulk - Resume\n\nJunior Developer\nSkills: Java, Python, HTML, CSS`],{type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'Gokul_Resume.txt';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // Contact form: basic client-side validation + fake submit
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      if(!name||!email||!message){ status.textContent = 'Please fill out all fields.'; return; }
+      // Simple email regex (not perfect)
+      const re = /^\S+@\S+\.\S+$/;
+      if(!re.test(email)){ status.textContent = 'Please enter a valid email.'; return; }
+      status.textContent = 'Sending message...';
+      // Simulate a network request -- replace with real API call when ready.
+      setTimeout(()=>{
+        status.textContent = 'Thanks — your message was sent (simulated).';
+        form.reset();
+      }, 900);
+    });
+
+    document.getElementById('clear').addEventListener('click', ()=>{ form.reset(); document.getElementById('formStatus').textContent=''; });
+
+    // Small accessibility: focus visible outline
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Tab') document.body.style.outline='none'; });
+  </script></body>
+</html>
